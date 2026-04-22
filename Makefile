@@ -4,10 +4,10 @@ sync:
 format:
 	uv run ruff format
 
-start_bot:
+run:
 	uv run python -m src.main
 
-makemigrations:
+makemigration:
 	uv run alembic revision --autogenerate -m "$(msg)"
 
 migrate:
@@ -15,7 +15,3 @@ migrate:
 
 undomigration:
 	uv run alembic downgrade -1
-
-run:
-	$(MAKE) migrate
-	$(MAKE) start_bot
