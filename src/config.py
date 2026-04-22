@@ -7,6 +7,7 @@ class Config(BaseSettings):
     )
 
     BOT_TOKEN: str
+    DATABASE_URL: str
 
 
 settings = Config()

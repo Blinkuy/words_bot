@@ -5,7 +5,10 @@ description = "Add your description here"
 readme = "readme.md"
 requires-python = ">=3.11.9"
 dependencies = [
+    "advanced-alchemy>=1.9.3",
     "aiogram>=3.27.0",
+    "aiosqlite>=0.22.1",
+    "alembic>=1.18.4",
     "pydantic-settings>=2.14.0",
     "ruff>=0.15.11",
     "sqlalchemy>=2.0.49",
