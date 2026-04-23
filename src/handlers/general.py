@@ -3,6 +3,7 @@ from aiogram.filters import CommandStart, Command
 from aiogram.types import Message
 from src.services.user import UserService
 from src.database import get_session
+from aiogram.enums import ChatType
 
 router = Router()
 
